@@ -1,5 +1,7 @@
 <?php
 
+$start = microtime(true);
+
 function search_converter($value): string
 {
     $converter = array(
@@ -19,3 +21,4 @@ $arr = array('Boss', 'Lentins', 'NAV', 'Endless', 'Dragons', 'DragS', 'SiLeNT', 
 $result  = end(preg_grep($search, $arr));
 
 print_r($result);
+echo 'Время выполнения скрипта: ' . round(microtime(true) - $start, 4) . ' сек.';
