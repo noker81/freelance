@@ -20,7 +20,7 @@ function search_converter($value): string
 }
 
 $search = search_converter('DRA S');
-$arr = $tmp = array('Boss', 'Lentins', 'NAV', 'Endless', 'Dragons', 'DragS', 'SiLeNT', 'Doctors', 'Lynx');
-$result  = end(preg_grep($search, $tmp));
+$arr = array('Boss', 'Lentins', 'NAV', 'Endless', 'Dragons', 'DragS', 'SiLeNT', 'Doctors', 'Lynx');
+$result  = end(preg_grep($search, $arr));
 
 print_r($result);
